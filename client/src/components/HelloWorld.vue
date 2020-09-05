@@ -18,22 +18,30 @@
       </v-col>
     </v-row>
     <div class="search">
-        <v-text-field placeholder="So what's your read?" />
+      <v-text-field ref="search" placeholder="So what's your read?" />
     </div>
     <div class="mainContent">
       We have all been wanting to read books! May it be that New Years'
       Resolution or to impress your better half ;)
     </div>
     <div class="mainContent">
-      But we always fear the length of the book, well that has now come to
-      an end!
+      But we always fear the length of the book, well that has now come to an
+      end!
     </div>
   </v-container>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "HelloWorld",
+  mounted() {
+    this.focusInput();
+  },
+  methods: {
+    focusInput() {
+      this.$refs.search.focus();
+    }
+  }
 };
 </script>
 

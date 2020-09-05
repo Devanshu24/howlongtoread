@@ -21,7 +21,11 @@
       <!-- <h1 class="title">
           HowLongToRead
         </h1> -->
-      <v-toolbar-title>HowLongToRead</v-toolbar-title>
+      <v-toolbar-title>
+        <router-link to="/" class="link">
+          HowLongToRead
+        </router-link>
+      </v-toolbar-title>
     </div>
 
     <v-spacer></v-spacer>
@@ -76,5 +80,9 @@ export default {
 <style>
 .title {
   font-family: "Roboto";
+}
+.link {
+  text-decoration: none;
+  color: inherit !important;
 }
 </style>

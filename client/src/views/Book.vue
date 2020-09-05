@@ -1,16 +1,14 @@
 <template>
-  
+  <div>
+    hi
+  </div>
 </template>
 
 <script>
 export default {
-    name: "Book",
-    data: () => ({
-        
-    })
-}
+  name: "Book",
+  data: () => ({})
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

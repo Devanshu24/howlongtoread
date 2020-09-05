@@ -22,7 +22,7 @@ export default {
 
 <style>
 * {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 .footer {
   margin-top: 20px;
